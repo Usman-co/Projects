@@ -1,0 +1,417 @@
+/* Google font  */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap");
+
+/* universal margin padding  */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: #f9f9f9cb;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Main Menu */
+header {
+  width: 100%;
+  height: 50px;
+  background: rgba(250, 247, 249, 0.932);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 0.8rem 7%;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+header i {
+  color: rgb(180, 119, 5);
+  font-size: 1.2rem;
+}
+
+header .logo {
+  font-size: 1rem;
+  font-weight: 800;
+  color: rgb(14, 13, 73);
+}
+header .logo:hover {
+  color: rgb(180, 119, 5);
+  font-weight: bold;
+}
+
+header .menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+header .menu ul li a {
+  font-size: 1rem;
+  font-weight: 800;
+  margin-left: 30px;
+  color: rgb(14, 13, 73);
+}
+
+header .menu li a.active,
+header .menu ul a:hover {
+  color: rgb(50, 107, 192);
+  border-bottom: 0.2rem solid #0066ff;
+  padding: 0.7rem 0;
+}
+
+/* *::selection {
+    background: var(--violet);
+    color: #fff;
+  } */
+
+html {
+  font-size: 80.5%;
+  overflow-x: hidden;
+}
+html::-webkit-scrollbar {
+  width: 0.7rem;
+}
+html::-webkit-scrollbar-track {
+  background: rgb(175, 175, 175);
+}
+html::-webkit-scrollbar-thumb {
+  background: #5900ff;
+}
+
+/* Home section */
+
+.home {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #e6e2d6;
+  height: 500px;
+  width: 100%;
+}
+
+section .content h3 {
+  color: rgb(9, 6, 92);
+  font-weight: bolder;
+  font-size: 3.2rem;
+  padding-bottom: 10pxs;
+  font-family: "Nunito", sans-serif;
+}
+.name {
+  padding-top: 0;
+}
+.container h4 {
+  padding-bottom: 20px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.text {
+  color: rgb(235, 80, 8);
+}
+
+.cursor {
+  display: inline-block;
+  width: 8px;
+  height: 20px;
+  background-color: rgb(235, 61, 8);
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.image {
+  width: 250px;
+  height: 250px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6), -1px -1px 5px rgba(0, 0, 0, 0.4);
+  background-color: rgb(235, 182, 8);
+  border-radius: 50%;
+  object-fit: contain;
+  transition: 0.5s;
+}
+
+.image:hover {
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.6), -1px -1px 10px rgba(0, 0, 0, 0.4);
+}
+.btn {
+  background-color: rgb(29, 7, 151);
+  color: white;
+  padding: 15px;
+  font-size: 1.2rem;
+  height: 35px;
+  width: 300px;
+  border-radius: 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+}
+.btn:hover {
+  background-color: rgb(25, 10, 112);
+}
+.home .btn i {
+  margin-left: 0.3rem;
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+.home .btn:hover i {
+  transform: translateX(5px);
+}
+.media {
+  padding-top: 20px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #030303;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: rgb(18, 205, 230);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.linkedin:hover {
+  color: white;
+  background-color: rgb(53, 111, 219);
+}
+
+.twitter:hover {
+  color: white;
+  background-color: rgb(53, 111, 219);
+}
+
+.github:hover {
+  color: white;
+  /* background-color: rgb(53, 111, 219); */
+}
+
+.insta:hover {
+  color: white;
+  background-color: rgb(236, 69, 161);
+}
+
+.facebook:hover {
+  color: white;
+  background-color: rgb(53, 111, 219);
+}
+
+/* About Me Section */
+
+.about-me {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.about-me i {
+  /* height: 50px; */
+  font-size: 2.5rem;
+  font-weight: 100px;
+  /* margin-bottom: 50px; */
+}
+
+.about-me h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-right: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.about-me .myself {
+  color: rgb(177, 3, 177);
+}
+
+.About {
+  background-color: #f7f5f1;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+  box-shadow: 2px 1px 3px rgba(0, 0, 0, 0.1);
+  font-family: "Nunito", sans-serif;
+}
+
+.About .about-content {
+  height: 300px;
+  width: 30%;
+  margin-bottom: 170px;
+  margin-right: 260px;
+}
+.about-img {
+  height: 370px;
+  width: 300px;
+  overflow: hidden;
+  background-color: rgb(199, 199, 199);
+  border-radius: 20px;
+  position: relative;
+  margin-left: 230px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6), -1px -1px 5px rgba(0, 0, 0, 0.4);
+  margin-bottom: 100px;
+  margin-right: 100px;
+  transition: 0.2s;
+}
+
+.about-img:hover {
+  background-color: pink;
+  transform: scale(1.3) rotate(360deg);
+}
+
+.image-u:hover {
+  filter: grayscale(0%) hue-rotate(300deg); /* Change the color to pink */
+}
+
+.About .about-img img {
+  width: 100%;
+  height: 100%;
+  transition: filter 0s ease;
+}
+.image-u {
+  filter: grayscale(100%);
+}
+
+.about-content .heading {
+  margin-bottom: 10px;
+  font-weight: 10px;
+  font-family: "Nunito", sans-serif;
+}
+.about-content .heading-1 {
+  margin-bottom: 10px;
+  font-weight: 900;
+  color: #021533;
+  font-family: "Nunito", sans-serif;
+}
+.about-content .intro {
+  font-family: "Nunito", sans-serif;
+  margin-top: 10px;
+  font-size: small;
+  font-weight: 2px;
+}
+
+.about-content .email {
+  font-size: small;
+  font-weight: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.about-content .email a {
+  color: rgb(34, 93, 202);
+  font-family: "Nunito", sans-serif;
+}
+
+.about-content .place {
+  font-size: small;
+  font-weight: 10px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-family: "Nunito", sans-serif;
+}
+
+.about-content .place a {
+  color: rgb(34, 93, 202);
+  font-family: "Nunito", sans-serif;
+}
+
+.about-content .button {
+  background-color: rgb(29, 7, 151);
+  color: white;
+  padding: 15px;
+  margin-top: 50px;
+  font-size: 1.2rem;
+  height: 35px;
+  width: 300px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.button:hover i {
+  transform: translateX(5px);
+}
+
+.button:hover {
+  background-color: rgb(25, 10, 112);
+}
+
+/* .reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+} */
+
+/* .active .reveal{
+    transform: translateY(0px);
+    opacity: 1;
+} */
+
+/* skilll Section */
+
+.skill-ability {
+  background-color: #6709e0;
+  display: flex;
+  justify-content: center;
+}
+
+.skill-ability h1 {
+  margin-top: 20px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-left: 10px;
+  color: white;
+  font-family: "Nunito", sans-serif;
+}
+
+.skill-ability .ability {
+  color: yellow;
+}
+
+.Skills {
+  background-color: #6709e0;
+  height: 600px;
+  width: 100%;
+  box-shadow: 2px 1px 3px rgba(0, 0, 0, 0.1);
+  font-family: "Nunito", sans-serif;
+}
+
+.skill-icon {
+  /* height: 70%; */
+  /* width: 75%; */
+  color: white;
+  background-color: rgba(20, 20, 20, 0.11);
+  margin-left: 200px;
+  margin-right: 200px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.pic{
+    margin-top: 30px;
+    border-radius: 50px;
+}
